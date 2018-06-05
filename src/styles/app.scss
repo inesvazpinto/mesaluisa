@@ -1,0 +1,21 @@
+//lib
+@import '/lib/reset';
+@import '/lib/variables';
+@import '/lib/base';
+
+//components
+@import '/components/loader';
+@import '/components/header';
+@import '/components/footer';
+
+//views
+@import '/views/home';
+@import '/views/chapter';
+@import '/views/contacts';
+@import '/views/pricing';
+@import '/views/reservations';
+@import '/views/bookmarket';
+@import '/views/bookdinner';
+@import '/views/bookworkshop';
+
+@import '/lib/animations';

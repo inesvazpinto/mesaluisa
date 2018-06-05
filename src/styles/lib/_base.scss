@@ -1,0 +1,214 @@
+/*------------------------------------*\
+    #Base SETTINGS
+\*------------------------------------*/
+@font-face {
+	font-family: 'Gilroy';
+	src:	url('/fonts/gilroy-extrabold-webfont.ttf') format('truetype'),
+			url('/fonts/gilroy-extrabold-webfont.woff') format('woff');
+	font-weight: lighter;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: 	url('/fonts/gilroy-extrabold-webfont.ttf') format('truetype'),
+			url('/fonts/gilroy-extrabold-webfont.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+[v-cloak] {
+  display:none;
+}
+
+.fade-enter-active, 
+.fade-leave-active {
+	transition: opacity 0.3s ease-in-out;
+}
+.fade-enter, 
+.fade-leave-to {
+	opacity: 0;
+}
+
+:root {
+	font-size: 62.5%;
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+}
+
+body {
+	font-family: $font-stack;
+	font-weight: 300;
+	line-height: 1.5;
+	color: $brown;
+	overflow-x: hidden;
+}
+
+body.is--hidden {
+	height: 100vh;
+	overflow-y: hidden;
+}
+
+body, canvas, section, aside, header, main, footer, video, h1, h2, h3, h4,h5, h6 {
+	margin: 0px;
+	padding: 0px;
+}
+
+html ul li{
+	list-style-type: none;
+}
+
+html ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+.main-content {
+	min-height: 100vh;
+	height: auto;
+	text-align: center;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Gilroy';
+	//font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	//margin-top: 0.2rem;
+	//margin-bottom: 0.5rem;
+	//line-height: 1.4;
+	//color: $blue;
+}
+
+p {
+	font-family: 'Gilroy';
+	//font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	//margin: 0;
+	//padding: 0;
+	//font-size: 1.4rem;
+	//line-height: 1.6;
+	
+	@media only screen and (min-width: 64rem) {
+		//font-size: 1.6rem;
+	}
+}
+
+a {
+	font-family: 'Gilroy';
+	//font-weight: normal;
+	font-style: normal;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	//margin: 0;
+	//padding: 0;
+	//font-size: 1rem;
+	//line-height: 1.6;
+	//font-size: 1.4rem;
+
+	@media only screen and (min-width: 64rem) {
+		//font-size: 1.6rem;
+	}
+
+}
+
+
+/*------------------------------------*\
+    #Section-General
+\*------------------------------------*/
+.title { //apagar
+	text-transform: uppercase;
+	font-size: 2.7rem;
+	font-weight: lighter;
+	line-height: 1.3;
+	margin-top: 0;
+	letter-spacing: 0.05rem;
+}
+
+.subtitle { //apagar
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	padding-bottom: 10px;
+	hyphens: none;
+	line-height: 1.5;
+}
+
+/* BTN */
+.button {
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-weight: 400;
+	letter-spacing: 0.15rem;
+	border: 2px solid white;
+	color: white;
+	background-color: transparent;
+	overflow: hidden;
+	display: inline-block;
+	padding: 15px 45px;
+	min-width: 100px;
+	margin: 30px auto;
+	position: relative;
+	transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+	z-index: 0;
+	width:	calc(100vw - 40px);
+	cursor: pointer;
+}
+
+.button:hover {
+	border: 2px solid $pink;
+	background-color: $pink;
+}
+
+.text-1 {
+	text-align: center;
+	font-size: 1.7rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	padding-bottom: 20px;
+	hyphens: none;
+	line-height: 1.5;
+}
+
+.text-2 {
+	text-align: center;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    letter-spacing: 0.05rem;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    line-height: 1.8;
+}
+
+.caps {
+	text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 1024px) {
+	.button {
+		width: auto;
+	    margin: 30px;
+	}
+
+	.page {
+		width: 80%;
+		margin-left: 20%;
+	}
+}
+
+	    

@@ -1,0 +1,28 @@
+//fonts
+$font-stack: 'Work Sans', Helvetica, Arial, sans-serif;
+
+
+
+$brown: #7A6E66;
+$pink: #EBC0BF;
+$green: #687C2F;
+
+
+@mixin hover-transition($time) {
+  -webkit-transition: $time all ease-in-out;
+     -moz-transition: $time all ease-in-out;
+      -ms-transition: $time all ease-in-out;
+          transition: $time all ease-in-out;
+}
+
+@mixin responsive-images($image1x, $image2x) {
+	background-image: url($image1x);
+	background-image: -webkit-image-set(
+    	url($image1x) 1x,
+    	url($image2x) 2x
+    );
+    background-image: image-set(
+    	url($image1x) 1x,
+    	url($image2x) 2x
+    );
+}

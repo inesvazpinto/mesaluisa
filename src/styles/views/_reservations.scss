@@ -1,0 +1,78 @@
+/*------------------------------------*\
+    #Resets
+\*------------------------------------*/
+input:focus {outline:none;}
+textarea:focus, input:focus {outline: 0;}
+a:link, a:visited, a:visited, a:hover, a:active {text-decoration: none; cursor: pointer;}
+
+.page--products .subtitle {
+    color: white;
+}
+
+.section-image {
+    background-image: url('/client/images/mesaluisa-reservations.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center center;
+    z-index: -10;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+    margin-top: 80px;
+}
+
+.products-wrap {	
+	display: block;
+	background-color: $brown;
+}
+
+.product {
+    height: 33.33%;
+    padding: 10vh 0 5vh 0;
+}
+
+.product .subtitle {
+    color: white;
+}
+
+.border-bottom {
+    border-bottom: 0.2px solid #FFF;
+}
+
+/*------------------------------------*\
+    #MQ
+\*------------------------------------*/
+@media screen and (min-width: 1024px) {	
+    .page--reservations {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    
+    .page--reservations .section-image {
+        margin-top: 0px;
+    }
+
+    .products-wrap {
+        min-height: 50vh;
+    }
+
+    .page--reservations .section-image, .page--reservations .products-wrap {
+        width: 50%; 
+        min-height: 100vh; 
+    }
+}

@@ -1,0 +1,65 @@
+/*------------------------------------*\
+    #Resets
+\*------------------------------------*/
+input:focus {outline:none;}
+textarea:focus, input:focus {outline: 0;}
+a:link, a:visited, a:visited, a:hover, a:active {text-decoration: none; cursor: pointer;}
+
+
+
+.page--pricing .section-image {
+    background-image: url('/client/images/mesaluisa-cooking.jpg');
+}
+
+.pricing-wrap {	
+	display: block;
+	background-color: $brown;
+	padding: 50px 0;
+}
+
+
+a.text-2 {
+	color: white;
+	text-decoration: none;
+}
+
+.no--margin {
+    margin: 0px;
+}
+
+.page--pricing .pricing {
+    margin-top: 25px;
+}
+
+.page--pricing .button {
+    margin-top: 25px;
+}
+
+.page--pricing .text-2 {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 25px;
+}
+/*------------------------------------*\
+    #MQ
+\*------------------------------------*/
+@media screen and (min-width: 1024px) {	
+    .page--pricing {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+	.page--pricing .section-image {
+        margin-top: 0px;
+    }
+    
+    .pricing-wrap {
+        min-height: 50vh;
+    }
+
+    .page--pricing .section-image, .page--pricing .pricing-wrap {
+        width: 50%; 
+        min-height: 100vh; 
+        padding-top: 25vh;
+    }
+}

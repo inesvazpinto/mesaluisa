@@ -1,0 +1,394 @@
+/*------------------------------------*\
+    #Section-1
+\*------------------------------------*/
+
+.page--bookmarket .section-image {
+    background-image: url('/client/images/mesaluisa-market.jpg');
+}
+
+.page--bookmarket .content-wrap {  
+    display: block;
+    background-color: $brown;
+    padding: 50px 0px;
+    box-sizing: border-box;
+    min-height: 50vh;
+}
+
+.page--bookmarket .content__header {
+    display: block;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.page--bookmarket .content__meta {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    line-height: 1.4rem;
+    margin: 0px;
+    padding: 0px;
+    color: #FFF;
+}
+
+.page--bookmarket .content__title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    line-height: 5rem;
+}
+
+/*------------------------------------*\
+    #FORM
+\*------------------------------------*/
+.content__form {
+    position: relative;
+    width: 85%; 
+    height: auto;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    //background: yellow;
+    margin-top: 5vh;
+}
+
+.form-booking {
+    position: relative;
+    width: 100%; 
+    height:auto;
+    display: block;
+    overflow: hidden;
+}
+
+.form__group {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.form__label {
+    display: inline-block;
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: 1.6rem;
+    text-align: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.form__input {
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    outline: none;
+    box-shadow: none;
+    color: #FFF;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 200;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: rgba(255,255,255,0.4);
+}
+.form__input::-moz-placeholder { 
+  color: rgba(255,255,255,0.4);
+}
+.form__input:-ms-input-placeholder {
+  color: rgba(255,255,255,0.4);
+}
+.form__input:-moz-placeholder {
+  color: rgba(255,255,255,0.4);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    background-color: $brown !important;
+  border: 0px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  -webkit-text-fill-color: #FFF;
+  -webkit-box-shadow: 0 0 0px 0px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.form__error-message {
+    color: $pink;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    margin-top: 5px;
+}
+
+.form__group--submit {
+    padding-top: 0px;
+}
+
+.form__group--submit button.button {
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+}
+
+.form__group--date__day .form__label,
+.form__group--date__month .form__label,
+.form__group--date__year .form__label {
+    font-size: 1.2rem;
+    text-transform: none;
+}
+
+.form__select {
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    border: none;
+    border-radius: 0px !important;
+    border-bottom: 1px solid #FFF;
+    color: #FFF;
+    font-weight: 200;
+}
+
+.form__select:focus {
+    outline:0;
+}
+
+.success-message {
+    color: #FFF;
+    font-weight: 200;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.error-message {
+    color: $pink;
+    font-weight: 200;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.loading-spinner {
+  border: 5px solid transparent;
+  border-radius: 50%;
+  border-top: 5px solid $pink;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  margin: 0 auto;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.disclaimer {
+    text-align: center;
+    color: $pink;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+.event-description {
+    position: absolute;
+    width: auto;
+    right: 2.5%;
+    margin-top:-35px;
+
+    @media only screen and (min-width: 1024px) {
+        margin-top: 25px;
+        top: 0px;
+    }
+}
+
+.event-description__text {
+    text-align: right;
+    color: $pink;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+}
+
+.close-modal {
+    position: absolute;
+    width: auto;
+    right: 5%;
+    margin-top: 25px;
+    top: 0px;
+}
+
+.close-modal__text {
+    text-align: right;
+    color: $pink;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    cursor: pointer;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: $brown;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 11111;
+    transition: right 0.5s ease-in-out;
+
+    @media only screen and (min-width: 1024px) {
+        width: 40%;
+    }
+}
+
+.modal.is--hidden {
+   right: -100%;
+}
+.modal.is--visible {
+    right: 0px;
+} 
+
+.modal__content {
+    position: relative;
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 15vh;
+
+    @media only screen and (min-width: 1024px) {
+        width: 70%;
+        
+    }
+}
+
+.modal__meta {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: #FFF;
+}
+
+.modal__text {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #FFF;
+    margin-bottom: 25px;
+    padding: 0px;
+    margin-top: -10px;
+}
+
+
+/*------------------------------------*\
+    #MQ
+\*------------------------------------*/
+@media screen and (min-width: 1024px) {	
+	.page--bookmarket {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    .page--bookmarket .section-image {
+        margin-top: 0px;
+        min-height: 100vh;
+        width: 50%;
+        left: 20%;
+        position: fixed;
+    }
+    .page--bookmarket .content-wrap {
+        min-height: 100vh;
+        width: 50%;
+        padding-top: 0px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+     .page--bookmarket .content__meta {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+    }
+
+     .page--bookmarket .content__title {
+        font-size: 5rem;
+    }
+
+   .page--bookmarket .content__form {
+        margin-top: 15vh;
+    }
+
+    .form__group--first-name,
+    .form__group--last-name,
+    .form__group--email,
+    .form__group--number-of-people {
+        width: 47.5%;
+        float: left;
+    }
+    .form__group--last-name,
+    .form__group--number-of-people {
+        float: right;
+    }
+
+    .form__group--date__day,
+    .form__group--date__month,
+    .form__group--date__year {
+        width: 30%;
+        float: left;
+    }
+
+    .form__group--date__month,
+    .form__group--date__year {
+        margin-left: 5%;
+    }
+
+    .success-message,
+    .loading-spinner {
+       // margin-top: 20vh;
+    } 
+    .content__form {
+        width: 70%; 
+    }
+}

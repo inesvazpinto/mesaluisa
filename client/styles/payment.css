@@ -1,0 +1,135 @@
+/** normalize.css */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+html {font-size: 62.5%;}
+body {
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	overflow-x:hidden;
+	line-height: 0px;
+}
+section {position: relative;height:auto;overflow:hidden;}
+main {display:block;}
+.main-content {display:block;}
+body.is--hidden{height:100vh;overflow:hidden;}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #222;
+    text-rendering: optimizeLegibility;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+p {
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    text-rendering: optimizeLegibility;
+}
+
+.bg-image {
+    position: relative;
+    display:block;
+    width: 100%;
+    height: 50vh;
+    background: url('/client/images/mesaluisa-reservations.jpg')no-repeat center center / cover;
+}
+
+.content-wrap {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    height: auto;
+    background-color: #FFF;
+    padding-bottom: 50px;
+}
+
+.content__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #7A6E66;
+    font-weight: 700;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    line-height: 5rem;
+}
+
+.content__desc {
+    display: block;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 5vh;
+}
+
+.desc {
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: 1.8rem;
+    text-align: left;
+    color: #000;
+}
+
+.desc.desc__list {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .bg-image {
+        width: 50%;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        height: 100vh;
+    }
+
+    .content-wrap {
+        width: 50%;
+        min-height: 100vh;
+        height: auto;
+        float: right;
+    }
+
+    .content__title {
+        font-size: 3rem;
+    }
+
+    .content__desc {
+        width: 85%;
+        margin-top: 25vh;
+    }
+
+    .desc {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+}
+
